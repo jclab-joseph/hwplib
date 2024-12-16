@@ -256,6 +256,8 @@ public class HWPReader {
 
             if (sr.getCurrentRecordHeader().getTagID() == HWPTag.MEMO_LIST) {
                 ForMemo.read(hwpFile.getBodyText().addNewMemo(), sr);
+            } else {
+                throw new Exception("unexpected tag id: " + sr.getCurrentRecordHeader().getTagID());
             }
         }
     }
