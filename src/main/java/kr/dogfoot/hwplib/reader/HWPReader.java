@@ -1,5 +1,6 @@
 package kr.dogfoot.hwplib.reader;
 
+import jakarta.xml.bind.DatatypeConverter;
 import kr.dogfoot.hwplib.object.HWPFile;
 import kr.dogfoot.hwplib.object.docinfo.BinData;
 import kr.dogfoot.hwplib.object.docinfo.bindata.BinDataCompress;
@@ -17,7 +18,6 @@ import kr.dogfoot.hwplib.tool.textextractor.TextExtractorListener;
 import kr.dogfoot.hwplib.util.compoundFile.reader.CompoundFileReader;
 import kr.dogfoot.hwplib.util.compoundFile.reader.StreamReader;
 
-import javax.xml.bind.DatatypeConverter;
 import java.io.*;
 import java.net.URL;
 import java.util.Iterator;
